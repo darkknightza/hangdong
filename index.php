@@ -264,7 +264,7 @@ http://www.tooplate.com/view/2092-shelf
                
                 <section class="tm-margin-b-l">
                     <header>
-                        <h2 class="tm-main-title">ยินดีต้อนรับเข้าสู่เว้ปไซต์เทศบาลตำบลหางดง</h2>    
+                        <h2 class="tm-main-title">ข่าว</h2>    
                     </header>
                     
                     
