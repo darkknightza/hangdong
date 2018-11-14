@@ -1,11 +1,16 @@
 <?php
+
 	session_start();
 	include "connect.php";
 
 	$strSQL = "SELECT * FROM user_login WHERE USERNAME = '".$_SESSION['USERNAME']."' ";
 	$objQuery = mysqli_query($objCon,$strSQL);
 	$objResult = mysqli_fetch_array($objQuery,MYSQLI_ASSOC);
+    
 
+    $sql = "SELECT * FROM `news_information`";
+    $query=mysqli_query($objCon,$sql);
+    
 ?>
 <!DOCTYPE html>
 <html>
@@ -103,7 +108,7 @@ http://www.tooplate.com/view/2092-shelf
                       </div>
                     </li>
                     <li class="nav-item">
-                      
+                    <a href="Create_News.php">สร้างข่าว</a>
                     </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
@@ -250,6 +255,15 @@ http://www.tooplate.com/view/2092-shelf
                                     </div>
                                 </div>
                             </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link active" style="color: rgb(255, 255, 255);">ข่าว<i class="fa fa-caret-down"></i></a>
+                                    <div class="dropdown-content">
+                                        <a href="Create_News.php">สร้างข่าว</a>
+                                        <a href="NewsList.php">ดูข่าว</a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -280,32 +294,22 @@ http://www.tooplate.com/view/2092-shelf
                     
                     <div class="tm-gallery">
                         <div class="row">
-                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="preview.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/h1.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    
-                                    <p class="tm-figcaption">ข่าวประชาสัมพันธ์เทศบาล</p>
-                                </a>
-                            </figure> <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="preview.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/h1.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    
-                                    <p class="tm-figcaption">ข่าวประชาสัมพันธ์เทศบาล</p>
-                                </a>
-                            </figure>
-                             <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="preview.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/h1.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    
-                                    <p class="tm-figcaption">ข่าวประชาสัมพันธ์เทศบาล</p>
-                                </a>
-                            </figure>
+                        <?php $i=1;
+                                while ($row = mysqli_fetch_array($query, MYSQLI_ASSOC)) { 
+                            ?>
+
+                                <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                                    <a href="newsDetail.php?NEWS_ID=<?php echo $row['NEWS_ID']; ?>">
+                                        <div class="tm-gallery-item-overlay">
+                                            <img src="img/<?php echo $row["NEWS_PICTURE"];?>" alt="Image" class="img-fluid tm-img-center">
+                                        </div>
+                                        
+                                        <p class="tm-figcaption"><?php echo $row["NEWS_NAME"]; ?></p>
+                                    </a>
+                                </figure> 
+
+
+                            <?php $i++; } ?>
                             
                             
                         

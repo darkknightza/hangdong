@@ -1,3 +1,10 @@
+<?php 
+    include "connect.php";
+    $value = $_GET['NEWS_ID'];
+    $sql = "SELECT * FROM `news_information` WHERE NEWS_ID=$value";
+    $query=mysqli_query($objCon,$sql);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,45 +26,45 @@ http://www.tooplate.com/view/2092-shelf
     <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
     <link rel="stylesheet" href="css/tooplate-style.css">                                   <!-- Templatemo style -->
     <style>
-        .mySlides {display:none;}
-        
-        .dropbtn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-        }
-        
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        
-        .dropdown-content a:hover {background-color: #ddd;}
-        
-        .dropdown:hover .dropdown-content {display: block;}
-        
-        .dropdown:hover .dropbtn {background-color: #3e8e41;}
-        
-        
-        </style>
+.mySlides {display:none;}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+</style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -78,7 +85,7 @@ http://www.tooplate.com/view/2092-shelf
                             <i class="fa fa-bars"></i>
                     </button>
 
-                    <div class="collapse navbar-collapse tm-main-nav" id="tmMainNav">
+                      <div class="collapse navbar-collapse tm-main-nav" id="tmMainNav">
                         <ul class="nav nav-fill tm-main-nav-ul">
                             <li class="nav-item">
                                 <div class="dropdown">
@@ -206,17 +213,21 @@ http://www.tooplate.com/view/2092-shelf
             </header>
             
             <div class="tm-main-content no-pad-b">
-                    
+            <?php $i=1;
+                                while ($row = mysqli_fetch_array($query, MYSQLI_ASSOC)) { 
+                            ?>
                 <section class="row tm-item-preview">
                     <div class="col-md-6 col-sm-12 mb-md-0 mb-5">
-                        <img src="img/h1.jpg" alt="Image" class="img-fluid tm-img-center-sm">
+                        <img src="img/<?php echo $row["NEWS_PICTURE"];?>" alt="Image" class="img-fluid tm-img-center-sm">
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <h2 class="tm-blue-text tm-margin-b-p">ข่าวประชาสัมพันธ์เทศบาล</h2>
+                        <h2 class="tm-blue-text tm-margin-b-p"><?php echo $row["NEWS_NAME"]; ?></h2>
                         <p class="tm-margin-b-p">รายละเอียดข่าว</p>
+                        <p class="tm-margin-b-p"><?php echo $row["NEWS_DETAILS"]; ?></p>
+
 
                         <a href="#" class="tm-btn tm-btn-blue">แสดงความคิดเห็น</a>
-
+                        <?php $i++; } ?>
                     </div>
                 </section>
 
