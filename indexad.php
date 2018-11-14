@@ -1,3 +1,12 @@
+<?php
+	session_start();
+	include "connect.php";
+
+	$strSQL = "SELECT * FROM user_login WHERE USERNAME = '".$_SESSION['USERNAME']."' ";
+	$objQuery = mysqli_query($objCon,$strSQL);
+	$objResult = mysqli_fetch_array($objQuery,MYSQLI_ASSOC);
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +82,41 @@ http://www.tooplate.com/view/2092-shelf
     <body>
         
         <div class="container">
-
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      
+                    </li>
+                    <li class="nav-item">
+                      
+                    </li>
+                    <li class="nav-item dropdown">
+                      
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                  <?php if($_SESSION['USERNAME'] != "") { ?>
+						<li><a href="profile.php"><?php echo $_SESSION["USERNAME"]; ?></a></li>
+						<li><a href="logout.php">ออกจากระบบ</a></li>
+						<?php } ?>
+						<?php if($_SESSION['USERNAME'] == "") { ?>
+						<li><a href="login.php">เข้าสู่ระบบ</a></li>
+						<?php } ?>
+                  </form>
+                </div>
+              </nav>
 
 
             <header class="tm-site-header">
@@ -90,61 +133,62 @@ http://www.tooplate.com/view/2092-shelf
                         <ul class="nav nav-fill tm-main-nav-ul">
                             <li class="nav-item">
                                 <div class="dropdown">
-                                <a class="nav-link active" style="color: rgb(255, 255, 255);">ข้อมูลพื้นฐาน<i class="fa fa-caret-down"></i></a>
+                                <a class="nav-link active" href="basic.html" style="color: rgb(255, 255, 255);">ข้อมูลพื้นฐาน<i class="fa fa-caret-down"></i></a>
                                 <div class="dropdown-content">
-                                  <a href="#">ตราสัญลักษณ์</a>
-                                  <a href="#">ประวัติความเป็นมา</a>
-                                  <a href="#">ข้อมูลทั่วไป</a>
-                                  <a href="#">โครงสร้างหน่วยงาน</a>
-                                  <a href="#">อำนาจและหน้าที่ของเทศบาล</a>
+                                  <a href="brand.html">ตราสัญลักษณ์</a>
+                                  <a href="history.html">ประวัติความเป็นมา</a>
+                                  <a href="general.html">ข้อมูลทั่วไป</a>
+                                  <a href="structure.html">โครงสร้างหน่วยงาน</a>
+                                  <a href="power.html">อำนาจและหน้าที่ของเทศบาล</a>
                                 </div>
                               </div>
                             </li>
                             <li class="nav-item">
                                 <div class="dropdown">
-                                <a class="nav-link active" style="color: rgb(255, 255, 255);">คณะผู้บริหาร<i class="fa fa-caret-down"></i></a>
+                                <a class="nav-link active" href="manager.html" style="color: rgb(255, 255, 255);">คณะผู้บริหาร<i class="fa fa-caret-down"></i></a>
                                 <div class="dropdown-content">
                                   <a href="คำกล่าวแสดงเจตจำนงของผู้บริหาร-ข้อ-028.html">เจตจำนงสุจริตของผู้บริหาร</a>
-                                  <a href="#">คณะผู้บริหาร</a>
-                                  <a href="#">สมาชิกสภาเทศบาล</a>
-                                  <a href="#">หัวหน้าส่วนราชการ</a>
+                                  <a href="mangroup.html">คณะผู้บริหาร</a>
+                                  <a href="manteam.html">สมาชิกสภาเทศบาล</a>
+                                  <a href="handgor.html">หัวหน้าส่วนราชการ</a>
                                 </div>
                               </div>
                             </li>
                             <li class="nav-item">
                                 <div class="dropdown">
-                                    <a class="nav-link active" style="color: rgb(255, 255, 255);">หน่วยงาน<i class="fa fa-caret-down"></i></a>
+                                    <a class="nav-link active" href="unit.html" style="color: rgb(255, 255, 255);">หน่วยงาน<i class="fa fa-caret-down"></i></a>
                                     <div class="dropdown-content">
-                                        <a href="#">สำนักปลัดเทศบาล</a>
-                                        <a href="#">กองคลัง</a>
-                                        <a href="#">กองช่าง</a>
-                                        <a href="#">กองสาธารณสุขและสิ่งแวดล้อม</a>
-                                        <a href="#">กองสวัสดิการสังคม</a>
-                                        <a href="#">สถานธนานุบาล</a>
-                                        <a href="#">โรงเรียนเทศบาลหางดง (ประชาคมสร้างสรรค์)</a>
-                                        <a href="#">ศูนย์พัฒนาเด็กเล็ก</a>
-                                        <a href="#">ศูนย์บริการสารสนเทศ</a>
+                                        <a href="palad.html">สำนักปลัดเทศบาล</a>
+                                        <a href="money.html">กองคลัง</a>
+                                        <a href="machunic.html">กองช่าง</a>
+                                        <a href="education.html">กองการศึกษา</a>
+                                        <a href="sanitary.html">กองสาธารณสุขและสิ่งแวดล้อม</a>
+                                        <a href="organ.html">กองสวัสดิการสังคม</a>
+                                        <a href="jamnam.html">สถานธนานุบาล</a>
+                                        <a href="school.html">โรงเรียนเทศบาลหางดง (ประชาคมสร้างสรรค์)</a>
+                                        <a href="nursary.html">ศูนย์พัฒนาเด็กเล็ก</a>
+                                        <a href="it.html">ศูนย์บริการสารสนเทศ</a>
                                     </div>
                                 </div>
                             </li>
                             <li class="nav-item">
                                     <div class="dropdown">
-                                        <a class="nav-link active" style="color: rgb(255, 255, 255);">นโยบายและแผน<i class="fa fa-caret-down"></i></a>
+                                        <a class="nav-link active" href="policy.html" style="color: rgb(255, 255, 255);">นโยบายและแผน<i class="fa fa-caret-down"></i></a>
                                         <div class="dropdown-content">
-                                            <a href="#">นโยบายและแผน</a>
-                                            <a href="#">เทศบัญญัติฯ</a>
-                                            <a href="#">เเผนพัฒนาเทศบาล</a>
-                                            <a href="#">เเผนการดำเนินงาน</a>
-                                            <a href="#">รายงานติดตามและประเมินผลฯ</a>
-                                            <a href="#">รายงานการประเมินผลการควบคุมภายใน</a>
-                                            <a href="#">แผนการจัดซื้อจัดจ้าง</a>
-                                            <a href="#">แผนปฏิบัติการป้องกันการทุจริต ๒๕๖๐ - ๒๕๖๔</a>
-                                            <a href="#">แนวปฏิบัติการจัดการเรื่องร้องเรียนการทุจริต</a>
-                                            <a href="#">รายงานการกำกับติดตามการดำเนินงานรอบ 6 เดือน</a>
-                                            <a href="#">รายงานผลการดำเนินงานประจำปี</a>
-                                            <a href="#">รายงานการกำกับติดตามการใช้จ่ายงบประมาณ รอบ 6 เดือน</a>
-                                            <a href="#">รายงานผลการใช้จ่ายงบประมาณประจำปี</a>
-                                            <a href="#">รายงานการกำกับติดตามการดำเนินการป้องกันการทุจริต รอบ 6 เดือน</a>
+                                            <a href="policydata.html">นโยบายและแผน</a>
+                                            <a href="ordinance.html">เทศบัญญัติฯ</a>
+                                            <a href="mumplan.html">เเผนพัฒนาเทศบาล</a>
+                                            <a href="processplan.html">เเผนการดำเนินงาน</a>
+                                            <a href="tracEvaReport.html">รายงานติดตามและประเมินผลฯ</a>
+                                            <a href="internalReport.html">รายงานการประเมินผลการควบคุมภายใน</a>
+                                            <a href="purchase.html">แผนการจัดซื้อจัดจ้าง</a>
+                                            <a href="corruptplan.html">แผนปฏิบัติการป้องกันการทุจริต ๒๕๖๐ - ๒๕๖๔</a>
+                                            <a href="complaintguide.html">แนวปฏิบัติการจัดการเรื่องร้องเรียนการทุจริต</a>
+                                            <a href="process6mount.html">รายงานการกำกับติดตามการดำเนินงานรอบ 6 เดือน</a>
+                                            <a href="processyear.html">รายงานผลการดำเนินงานประจำปี</a>
+                                            <a href="tracReportmoney6.html">รายงานการกำกับติดตามการใช้จ่ายงบประมาณ รอบ 6 เดือน</a>
+                                            <a href="reportmoneyyear.html">รายงานผลการใช้จ่ายงบประมาณประจำปี</a>
+                                            <a href="corrupt6mount.html">รายงานการกำกับติดตามการดำเนินการป้องกันการทุจริต รอบ 6 เดือน</a>
                                         </div>
                                     </div>
                                 </li>
@@ -158,31 +202,31 @@ http://www.tooplate.com/view/2092-shelf
                             </li>
                             <li class="nav-item">
                                 <div class="dropdown">
-                                    <a class="nav-link active" style="color: rgb(255, 255, 255);" href="ยุทธศาสตร์องค์กรปกครองส่วนท้องถิ่น-2560-2564.html">ยุทธศาสตร์การพัฒนาฯ<i class="fa fa-caret-down"></i></a>
+                                    <a class="nav-link active" href="devstratigy.html" style="color: rgb(255, 255, 255);" href="ยุทธศาสตร์องค์กรปกครองส่วนท้องถิ่น-2560-2564.html">ยุทธศาสตร์การพัฒนาฯ<i class="fa fa-caret-down"></i></a>
                                     <div class="dropdown-content">
-                                        <a href="#">การจัดซื้อจัดจ้างหรือจัดหาพัสดุ</a>
-                                        <a href="#">ประกาศต่างๆ เกี่ยวกับการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a>
-                                        <a href="#">สรุปผลการจัดซื้อจัดจ้างหรือการจัดหาพัสดุรายเดือน</a>
-                                        <a href="#">รายงานผลการจัดซื้อจัดจ้างหรือการจัดหาพัสดุประจำปี</a>
+                                        <a href="purchaseparcel.html">การจัดซื้อจัดจ้างหรือจัดหาพัสดุ</a>
+                                        <a href="annourceparcel.html">ประกาศต่างๆ เกี่ยวกับการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a>
+                                        <a href="parcelsummount.html">สรุปผลการจัดซื้อจัดจ้างหรือการจัดหาพัสดุรายเดือน</a>
+                                        <a href="parcelsumyear.htmk=l">รายงานผลการจัดซื้อจัดจ้างหรือการจัดหาพัสดุประจำปี</a>
                                     </div>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="dropdown">
-                                    <a class="nav-link active" style="color: rgb(255, 255, 255);">รายงาน<i class="fa fa-caret-down"></i></a>
+                                    <a class="nav-link active" href="report.html" style="color: rgb(255, 255, 255);">รายงาน<i class="fa fa-caret-down"></i></a>
                                     <div class="dropdown-content">
-                                        <a href="#">การจัดเก็บและจัดหารายได้</a>
-                                        <a href="#">สถิติรายได้ของเทศบาล</a>
-                                        <a href="#">วารสาร/รายงานผลการปฏิบัติงานประจำปี</a>
-                                        <a href="#">การประชุมสภาเทศบาลฯ</a>
-                                        <a href="#">งานทะเบียนราษฎร </a>
-                                        <a href="#">งานทะเบียนพาณิชย์</a>
+                                        <a href="keep.html">การจัดเก็บและจัดหารายได้</a>
+                                        <a href="income.html">สถิติรายได้ของเทศบาล</a>
+                                        <a href="reportmag.html">วารสาร/รายงานผลการปฏิบัติงานประจำปี</a>
+                                        <a href="meeting.html">การประชุมสภาเทศบาลฯ</a>
+                                        <a href="regisman.html">งานทะเบียนราษฎร </a>
+                                        <a href="regiscom.html">งานทะเบียนพาณิชย์</a>
                                         <a href="การให้บริการงานป้องกันและบรรเทาสาธารณภัย.html">งานป้องกันและบรรเทาสาธารณภัย</a>
-                                        <a href="#">งานบริการกองสาธารณสุขฯ</a>
-                                        <a href="#">งานกองสวัสดิการสังคม</a>
-                                        <a href="#">งานบริหารกองช่าง</a>
-                                        <a href="#">งานบริหารกองการศึกษา</a>
-                                        <a href="#">รายงานผลการดำเนินการป้องกันการทุจริต</a>
+                                        <a href="servicesanitary.html">งานบริการกองสาธารณสุขฯ</a>
+                                        <a href="organunit.html">งานกองสวัสดิการสังคม</a>
+                                        <a href="machanicunit.html">งานบริหารกองช่าง</a>
+                                        <a href="manageunit.html">งานบริหารกองการศึกษา</a>
+                                        <a href="reportcorruption.html">รายงานผลการดำเนินการป้องกันการทุจริต</a>
                                     </div>
                                 </div>
                             </li>
@@ -190,18 +234,19 @@ http://www.tooplate.com/view/2092-shelf
                                 <div class="dropdown">
                                     <a class="nav-link active" style="color: rgb(255, 255, 255);">ศูนย์ข้อมูลข่าวสาร<i class="fa fa-caret-down"></i></a>
                                     <div class="dropdown-content">
-                                        <a href="#">ระเบียบ พรบ. กฏหมายที่เกี่ยวข้อง</a>
-                                        <a href="#">มาตรฐานการปฏิบัติงาน</a>
-                                        <a href="#">ศุนย์ข้อมูลข่าวสาร</a>
-                                        <a href="#">ประกาศเทศบาลฯ</a>
-                                        <a href="#">คำสั่งเทศบาลฯ </a>
-                                        <a href="#">ศูนย์ประสานงานการเลือกตั้ง</a>
-                                        <a href="#">คลังข้อมูล</a>
-                                        <a href="#">มุม KM</a>
-                                        <a href="#">ร้องเรียนงานบุคคล</a>
-                                        <a href="#">งานบริหารกองช่าง</a>
-                                        <a href="#">มาตรฐานการให้บริการ</a>
-                                        <a href="#">ข้อมูลเชิงสถิติการให้บริการ</a>
+                                        <a href="lawabout.html">ระเบียบ พรบ. กฏหมายที่เกี่ยวข้อง</a>
+                                        <a href="standard.html">มาตรฐานการปฏิบัติงาน</a>
+                                        <a href="data.html">ศุนย์ข้อมูลข่าวสาร</a>
+                                        <a href="announe.html">ประกาศเทศบาลฯ</a>
+                                        <a href="command.html">คำสั่งเทศบาลฯ </a>
+                                        <a href="election.html">ศูนย์ประสานงานการเลือกตั้ง</a>
+                                        <a href="archives.html">คลังข้อมูล</a>
+                                        <a href="km.html">มุม KM</a>
+                                        <a href="complaint.html">ร้องเรียนงานบุคคล</a>
+                                        <a href="servicestandard.html">มาตรฐานการให้บริการ</a>
+                                        <a href="servicestat.html">ข้อมูลเชิงสถิติการให้บริการ</a>
+                                        <a href="landtax.html">ภาษีโรงเรือนและที่ดิน</a>
+                                        <a href="prspend.html">ประชาสัมพันธ์งบประมาณรายจ่าย</a>
                                     </div>
                                 </div>
                             </li>
