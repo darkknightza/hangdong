@@ -272,10 +272,13 @@ http://www.tooplate.com/view/2092-shelf
             <div class="tm-main-content">
 
                 <div class="w3-content w3-display-container">
+                    <?php  ?>
                     <img class="mySlides" src="img/image-01.jpg" style="width:1000px; height: 300px;">
                     <img class="mySlides" src="img/h1.jpg" style="width:1000px; height: 300px;">
                     <img class="mySlides" src="img/image-02.jpg" style="width:1000px; height: 300px;">
                     <img class="mySlides" src="img/image-03.jpg" style="width:1000px; height: 300px;">
+                    <?php  ?>
+
 
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
