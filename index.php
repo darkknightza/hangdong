@@ -288,28 +288,7 @@ http://www.tooplate.com/view/2092-shelf
 
 
                             <?php $i++; } ?>
-                                
-                                <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                    <a href="preview.html">
-                                        <div class="tm-gallery-item-overlay">
-                                            <img src="img/h1.jpg" alt="Image" class="img-fluid tm-img-center">
-                                        </div>
-                                        
-                                        <p class="tm-figcaption">ข่าวประชาสัมพันธ์เทศบาล</p>
-                                    </a>
-                                </figure>
-                                <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                    <a href="preview.html">
-                                        <div class="tm-gallery-item-overlay">
-                                            <img src="img/h1.jpg" alt="Image" class="img-fluid tm-img-center">
-                                        </div>
-                                        
-                                        <p class="tm-figcaption">ข่าวประชาสัมพันธ์เทศบาล</p>
-                                    </a>
-                                </figure>
-                            
-                            
-                        
+
                             
                         </div>   
                     </div>
