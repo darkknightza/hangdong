@@ -81,7 +81,7 @@ body{
                 <input type="hidden" value="<?php echo $ID ?>" name="ID">
                <div class="row">
                     <div class="col-md-6">
-                    <img src="/savefile/<?php echo $objResult['NEWS_PICTURE'] ?>" class="mx-auto d-block" style="width:100%">
+                    <img src="/img/<?php echo $objResult['NEWS_PICTURE'] ?>" class="mx-auto d-block" style="width:100%">
                     <div class="form-group">
                         <input type="file" name="fileToUpload" class="form-control" />
                     </div>

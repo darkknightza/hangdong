@@ -1,6 +1,6 @@
 <?php
 include "connect.php";
-$target_dir = "savefile/";
+$target_dir = "img/";
 if($_FILES["fileToUpload"]["name"]){
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 

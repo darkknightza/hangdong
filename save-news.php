@@ -64,12 +64,10 @@ $txtMsg = filter_input(INPUT_POST, 'txtMsg', FILTER_SANITIZE_STRING);
 $sql = "INSERT INTO `news_information`(`NEWS_NAME`, `NEWS_DETAILS`, `NEWS_PICTURE`) VALUES ('$txtName','$txtMsg','$PictureName')";
 $objQuery = mysqli_query($objCon,$sql);
 if($objQuery){
-    if(session_start()!=''){
+    if($_SESSION["USERNAME"]!=''){
         echo '<script>alert("Insert complete");window.location = "indexad.php"</script>';
     }else{
         echo '<script>alert("Insert complete");window.location = "index.php"</script>';
     }
-
-   
 }
 ?>
