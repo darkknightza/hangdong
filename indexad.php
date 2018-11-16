@@ -152,7 +152,7 @@ http://www.tooplate.com/view/2092-shelf
                                 <div class="dropdown">
                                 <a class="nav-link active" href="manager.html" style="color: rgb(255, 255, 255);">คณะผู้บริหาร<i class="fa fa-caret-down"></i></a>
                                 <div class="dropdown-content">
-                                  <a href="คำกล่าวแสดงเจตจำนงของผู้บริหาร-ข้อ-028.html">เจตจำนงสุจริตของผู้บริหาร</a>
+                                  <a href="want.html">เจตจำนงสุจริตของผู้บริหาร</a>
                                   <a href="mangroup.html">คณะผู้บริหาร</a>
                                   <a href="manteam.html">สมาชิกสภาเทศบาล</a>
                                   <a href="handgor.html">หัวหน้าส่วนราชการ</a>
@@ -199,15 +199,15 @@ http://www.tooplate.com/view/2092-shelf
                                 </li>
                             <li class="nav-item">
                                 <div class="dropdown">
-                                    <a class="nav-link active" style="color: rgb(255, 255, 255);">แผนอัตรากำลัง ๓ ปี<i class="fa fa-caret-down"></i></a>
+                                    <a class="nav-link active" style="color: rgb(255, 255, 255);" href="#">แผนอัตรากำลัง ๓ ปี<i class="fa fa-caret-down"></i></a>
                                     <div class="dropdown-content">
-                                        <a href="แผนอัตรากำลัง-๓-ปีทต.หางดง-61-63.html">(พ.ศ. ๒๕๖๑ - ๒๕๖๓)</a>
+                                        <a href="powerplan3y.html">(พ.ศ. ๒๕๖๑ - ๒๕๖๓)</a>
                                     </div>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="dropdown">
-                                    <a class="nav-link active" href="devstratigy.html" style="color: rgb(255, 255, 255);" href="ยุทธศาสตร์องค์กรปกครองส่วนท้องถิ่น-2560-2564.html">ยุทธศาสตร์การพัฒนาฯ<i class="fa fa-caret-down"></i></a>
+                                    <a class="nav-link active" href="devstratigy.html" style="color: rgb(255, 255, 255);" href="devstratigy.html">ยุทธศาสตร์การพัฒนาฯ<i class="fa fa-caret-down"></i></a>
                                     <div class="dropdown-content">
                                         <a href="purchaseparcel.html">การจัดซื้อจัดจ้างหรือจัดหาพัสดุ</a>
                                         <a href="annourceparcel.html">ประกาศต่างๆ เกี่ยวกับการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a>
@@ -226,7 +226,7 @@ http://www.tooplate.com/view/2092-shelf
                                         <a href="meeting.html">การประชุมสภาเทศบาลฯ</a>
                                         <a href="regisman.html">งานทะเบียนราษฎร </a>
                                         <a href="regiscom.html">งานทะเบียนพาณิชย์</a>
-                                        <a href="การให้บริการงานป้องกันและบรรเทาสาธารณภัย.html">งานป้องกันและบรรเทาสาธารณภัย</a>
+                                        <a href="ems.html">งานป้องกันและบรรเทาสาธารณภัย</a>
                                         <a href="servicesanitary.html">งานบริการกองสาธารณสุขฯ</a>
                                         <a href="organunit.html">งานกองสวัสดิการสังคม</a>
                                         <a href="machanicunit.html">งานบริหารกองช่าง</a>
