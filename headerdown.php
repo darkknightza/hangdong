@@ -1,20 +1,3 @@
-<?php
-
-	session_start();
-	include "connect.php";
-
-	$strSQL = "SELECT * FROM user_login WHERE USERNAME = '".$_SESSION['USERNAME']."' ";
-	$objQuery = mysqli_query($objCon,$strSQL);
-	$objResult = mysqli_fetch_array($objQuery,MYSQLI_ASSOC);
-    
-
-    $sql = "SELECT * FROM `news_information`";
-    $query=mysqli_query($objCon,$sql);
-
-    $sql1 = "SELECT * FROM `news_information` ORDER BY NEWS_ID DESC LIMIT 2";
-    $query1=mysqli_query($objCon,$sql1);
-    
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -216,89 +199,9 @@ body {background-color: #e6f2ff;}
 }
 
 
-</style>
-
-<body>
-    <div class="hed1">
-    <a href="#" class="logo"><img src="images/logo.gif" alt="" style="height: 100px;width: 100px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>&nbsp;&nbsp;&nbsp;เทศบาลตำบลหางดง</h1>
-                    <br>&nbsp;&nbsp;&nbsp;Hangdong Subdistrict Municipality
-                    <br>
-                    <br>
-                    <br>
-    </div>
-                    
-
-      <div class="slider_main">
-        <div id="full-slider-wrapper">
-        <div id="layerslider" style="width:100%;height:473px;">
-        
-        
-                                <?php $j=1;
-                                while ($row1 = mysqli_fetch_array($query1, MYSQLI_ASSOC)) { 
-                            ?>
-                                <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
-                                <img src="images/slider/t1.jpg" class="ls-bg" alt="Slide background"/>
-                                
-                                
-                                <div class="ls-l videopreview" style="top:87px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
-                                <!--<iframe src="http://player.vimeo.com/video/34134308?portrait=0&amp;color=ff9933&autoplay=1" width="443" height="290" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-                                <img src="images/<?php echo $row1["NEWS_PICTURE"]; ?>" alt=""  style="height: 300px;width: 450px"/>
-                                </div>
-                                
-                                
-                                <div class="ls-l" style="top:140px;left:638px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-                                <h2 class="l1"><?php echo $row1["NEWS_NAME"]; ?></h2>
-                                </div>
-                                
-                                <div class="ls-l" style="top:200px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-                                <h2 class="l2"><?php echo $row1["NEWS_DETAILS"]; ?></h2>
-                                </div>
-                                
-                            
-                                
-                                <div class="ls-l" style="top:265px;left:598px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-                                <a href="detail.php?NEWS_ID=<?php echo $row1['NEWS_ID']; ?>" class="button2">ดูรายละเอียด</a>
-                                </div>
-
-
-                                
-                                
-                                
-                                
-                               
-                                </div><!--FIRST SLIDE-->
-                            <?php $j++; } ?>   
-                                
-                                
-                                
-                                                               
-                     
-           
-            
-        </div>
-        </div> 
-        </div>
-
-        <div class="service_section">
-            <div class="hed">
-                <div class="container">
-                    
-                
-
-                            <h2>ยินดีต้อนรับเข้าสู่เว็ปไซต์เทศบาลตำบลหางดง</h2>
-                            <h4>Welcomr to Hangdong Subdistrict Municipality Website</h4>
-                            
-                        
-                
-                </div>
-            </div>
-
-        </div>
-        
-    
-   
-        <div class="header" >
-        			<a href="#" class="logo"><img src="images/logo.gif" alt="" style="height: 100px;width: 100px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>&nbsp;&nbsp;&nbsp;เทศบาลตำบลหางดง</h1>
+</style> 
+   <div class="header" >
+        			<a href="index.php" class="logo"><img src="images/logo.gif" alt="" style="height: 100px;width: 100px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>&nbsp;&nbsp;&nbsp;เทศบาลตำบลหางดง</h1>
                     <br>&nbsp;&nbsp;&nbsp;Hangdong Subdistrict Municipality
                     
                     <div class="nav mobile">
@@ -307,18 +210,18 @@ body {background-color: #e6f2ff;}
 
                     <li class="dropdown"><a href="#faqs_part" >ข้อมูลพื้นฐาน</a>
                         <div class="dropdown-content">
-                        <a href="baseinfo.html">ข้อมูลพื้นฐาน</a><br>
-                        <a href="sign.html">ตราสัญลักษณ์</a><br>
-                        <a href="history.html">ประวัติความเป็นมา</a><br>
-                        <a href="general.html">ข้อมูลทั่วไป</a><br>
+                        <a href="baseinfo.php">ข้อมูลพื้นฐาน</a><br>
+                        <a href="sign.php">ตราสัญลักษณ์</a><br>
+                        <a href="history.php">ประวัติความเป็นมา</a><br>
+                        <a href="general.php">ข้อมูลทั่วไป</a><br>
                         <a href="structure.html">โครงสร้างหน่วยงาน</a><br>
-                        <a href="power.html">อำนาจและหน้าที่ของเทศบาล</a><br>
+                        <a href="power.php">อำนาจและหน้าที่ของเทศบาล</a><br>
                     </div></li>
 
                     <li class="dropdown"><a href="#features">คณะผู้บริหาร</a>
                     <div class="dropdown-content">
                         <a href="manager.html">คณะผู้บริหาร</a><br>
-                        <a href="want.html">เจตจำนงสุจริตของผู้บริหาร</a><br>\
+                        <a href="want.html">เจตจำนงสุจริตของผู้บริหาร</a><br>
                         <a href="manteam.html">สมาชิกสภาเทศบาล</a><br>
                         <a href="handgor.html">หัวหน้าส่วนราชการ</a><br>
                     </div></li>
@@ -411,176 +314,11 @@ body {background-color: #e6f2ff;}
 
                     </div>
                     </li>
-                    <li class="dropdown"><a href="login.html">ข่าว</a>
-                        <div class="dropdown-content">
-                        <a href="creatnews.php">สร้างข่าว</a><br>
-                        <a href="NewsList.php">ดูข้อมูลข่าว</a><br>
-                    </li>
 
                   
 
-                    <li><a href="logout.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;ออกจากระบบ</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;เข้าสู่ระบบ</a></li>
                     </ul>
                     </div>
         
         </div>
-
-
-
-
-        
-        
-
-
-		<div class="wrapper">
-
-
-        
-        <div class="common_section" id="faqs_part">
-        <div class="container">
-        
-        			<h2>ประชาสัมพันธ์จากเทศบาลตำบลหางดง</h2>
-                    <h4>News From Hangdong Subdistrict Municipality Office</h4>
-                    
-                    <?php $i=1;
-                                while ($row = mysqli_fetch_array($query, MYSQLI_ASSOC)) { 
-                            ?>
-                        <a href="detail.php?NEWS_ID=<?php echo $row['NEWS_ID']; ?>"><div class="faqbox">
-                        <div class="title"><?php echo $row["NEWS_NAME"]; ?></div>
-                        <img src="images/<?php echo $row["NEWS_PICTURE"];?>" alt="..." class="img-thumbnail" style="height: 250px;width: 500px">
-                        <p>
-                        .....
-
-                        </p>
-
-                        </div></a>
-                    <?php $i++; } ?>
-                    
-                    
-                    
-                    
-        
-        </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="common_section">
-        <div class="container">
-        
-        	
-            		
-                   
-					<div class="copyright">Copyright 2016 All Right Reserved - <a href="http://www.pfind.com/goodies/landiya/">Landiya</a> Theme By <a href="http://www.pfind.com/goodies/">pFind.com Goodies</a>.</div>                    
-        
-        </div>
-        </div>
-        
-        
-        </div><!--wrapper-->
-
-
-		<script>
-            jQuery("#layerslider").layerSlider({
-                responsive: false,
-                responsiveUnder: 1100,
-                layersContainer: 1100,
-                skin: 'fullwidth',
-                hoverPrevNext: false,
-                skinsPath: 'layerslider/skins/'
-            });
-        
-        
-        </script>
-
-		<script src="js/wow.js"></script>
-        <script>
-        wow = new WOW(
-          {
-            animateClass: 'animated',
-            offset:       100
-          }
-        );
-        wow.init();
-        document.getElementById('moar').onclick = function() {
-          var section = document.createElement('section');
-          section.className = 'section--purple wow fadeInDown';
-          this.parentNode.insertBefore(section, this);
-        };
-        </script>
-
-		<script type="text/javascript">
-		$(function() {
-		$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		var target = $(this.hash);
-		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		if (target.length) {
-		$('html,body').animate({
-		scrollTop: target.offset().top - 132
-		}, 2000);
-		return false;
-		}
-		}
-		});
-		});
-        </script>
-        
-        
-		<script type="text/javascript">
-        
-        
-        $(document).ready(function() {
-        
-        if($(window).width() <= 1200){
-        
-        
-        $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-        $('html,body').animate({
-        scrollTop: target.offset().top - 132
-        }, 2000);
-        return false;
-        }
-        }
-        });
-        });
-        
-        
-        
-        }
-        
-        });
-        
-        
-        </script> 
-             
-
-		
-</body>
-</html>

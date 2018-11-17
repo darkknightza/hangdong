@@ -1,3 +1,8 @@
+<?php 
+    include 'connect.php';
+
+    session_start();
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -218,85 +223,85 @@ body {background-color: #e6f2ff;}
                         <div class="dropdown-content">
                         <a href="baseinfo.html">ข้อมูลพื้นฐาน</a><br>
                         <a href="sign.html">ตราสัญลักษณ์</a><br>
-                        <a href="#">ประวัติความเป็นมา</a><br>
-                        <a href="#">ข้อมูลทั่วไป</a><br>
-                        <a href="#">โครงสร้างหน่วยงาน</a><br>
-                        <a href="#">อำนาจและหน้าที่ของเทศบาล</a><br>
+                        <a href="history.html">ประวัติความเป็นมา</a><br>
+                        <a href="general.html">ข้อมูลทั่วไป</a><br>
+                        <a href="structure.html">โครงสร้างหน่วยงาน</a><br>
+                        <a href="power.html">อำนาจและหน้าที่ของเทศบาล</a><br>
                     </div></li>
 
                     <li class="dropdown"><a href="#features">คณะผู้บริหาร</a>
                     <div class="dropdown-content">
-                        <a href="#">คณะผู้บริหาร</a><br>
-                        <a href="#">เจตจำนงสุจริตของผู้บริหาร</a><br>
-                        <a href="#">คณะผู้บริหาร</a><br>
-                        <a href="#">สมาชิกสภาเทศบาล</a><br>
-                        <a href="#">หัวหน้าส่วนราชการ</a><br>
+                        <a href="manager.html">คณะผู้บริหาร</a><br>
+                        <a href="want.html">เจตจำนงสุจริตของผู้บริหาร</a><br>\
+                        <a href="manteam.html">สมาชิกสภาเทศบาล</a><br>
+                        <a href="handgor.html">หัวหน้าส่วนราชการ</a><br>
                     </div></li>
 
                     <li class="dropdown"><a href="#testimonials_part">หน่วยงาน </a>
                         <div class="dropdown-content">
-                        <a href="#">หน่วยงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">สำนักปลัดเทศบาล&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">กองคลัง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br><br>
-                        <a href="#">กองช่าง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">กองการศึกษา</a><br>
-                        <a href="#">กองสาธารณสุขและสิ่งแวดล้อม</a><br>
-                        <a href="#">กองสวัสดิการสังคม&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">สถานธนานุบาล</a><br>
-                        <a href="#">โรงเรียนเทศบาลหางดง (ประชาคมสร้างสรรค์)</a><br>
-                        <a href="#">ศูนย์พัฒนาเด็กเล็ก</a><br>
-                        <a href="#">ศูนย์บริการสารสนเทศ</a>
+                        <a href="unit.html">หน่วยงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="palad.html">สำนักปลัดเทศบาล&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="money.html">กองคลัง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br><br>
+                        <a href="machunic.html">กองช่าง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="education.html">กองการศึกษา</a><br>
+                        <a href="sanitary.html">กองสาธารณสุขและสิ่งแวดล้อม</a><br>
+                        <a href="organ.html">กองสวัสดิการสังคม&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="jamnam.html">สถานธนานุบาล</a><br>
+                        <a href="school.html">โรงเรียนเทศบาลหางดง (ประชาคมสร้างสรรค์)</a><br>
+                        <a href="nursary.html">ศูนย์พัฒนาเด็กเล็ก</a><br>
+                        <a href="it.html">ศูนย์บริการสารสนเทศ</a>
                     </div></li>
                     <li class="dropdown"><a href="#contact_part1">นโยบาย</a>
                         <div class="dropdown-content">
-                        <a href="#">นโยบาย&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">นโยบายและแผน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">เทศบัญญัติฯ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">แผนพัฒนาเทศบาล&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">แผนการดำเนินงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">รายงานติดตามและประเมินผลฯ</a><br>
-                        <a href="#">รายงานการประเมินผลการควบคุมภายใน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">แผนการจัดซื้อจัดจ้าง</a><br>
-                        <a href="#">แผนปฏิบัติการป้องกันการทุจริต ๒๕๖๐ - ๒๕๖๔</a><br>
-                        <a href="#">แนวปฏิบัติการจัดการเรื่องร้องเรียนการทุจริต</a><br>
-                        <a href="#">รายงานการกำกับติดตามการดำเนินงานรอบ ๖ เดือน</a><br>
-                        <a href="#">รายงานผลการดำเนินงานประจำปี</a><br>
-                        <a href="#">รายงานการกำกับติดตามการใช้จ่ายงบประมาณ รอบ ๖ เดือน</a><br>
-                        <a href="#">รายงานผลการใช้จ่ายงบประมาณประจำปี</a><br>
-                        <a href="#">รายงานการกำกับติดตามการดำเนินงานการป้องกันการทุจริต รอบ ๖ เดือน</a><br>
+                        <a href="policy.html">นโยบาย&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="policydata.html">นโยบายและแผน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="ordinance.html">เทศบัญญัติฯ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="mumplan.html">แผนพัฒนาเทศบาล&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="processplan.html">แผนการดำเนินงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="tracEvaReport.html">รายงานติดตามและประเมินผลฯ</a><br>
+                        <a href="internalReport.html">รายงานการประเมินผลการควบคุมภายใน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="purchase.html">แผนการจัดซื้อจัดจ้าง</a><br>
+                        <a href="corruptplan.htm">แผนปฏิบัติการป้องกันการทุจริต ๒๕๖๐ - ๒๕๖๔</a><br>
+                        <a href="complaintguide.html">แนวปฏิบัติการจัดการเรื่องร้องเรียนการทุจริต</a><br>
+                        <a href="process6mount.html">รายงานการกำกับติดตามการดำเนินงานรอบ ๖ เดือน</a><br>
+                        <a href="processyear.html">รายงานผลการดำเนินงานประจำปี</a><br>
+                        <a href="tracReportmoney6.html">รายงานการกำกับติดตามการใช้จ่ายงบประมาณ รอบ ๖ เดือน</a><br>
+                        <a href="reportmoneyyear.html">รายงานผลการใช้จ่ายงบประมาณประจำปี</a><br>
+                        <a href="corrupt6mount.html">รายงานการกำกับติดตามการดำเนินงานการป้องกันการทุจริต รอบ ๖ เดือน</a><br>
                     </div></li>
                     <li class="dropdown"><a href="#pricing_part2">แผนอัตรากำลัง ๓ ปี</a>
                      <div class="dropdown-content">
                         <a href="#">แผนอัตรากำลัง ๓ ปี</a><br>
-                        <a href="#">๒๕๖๑ - ๓๕๖๓</a><br>
+                        <a href="powerplan3y.html">๒๕๖๑ - ๓๕๖๓</a><br>
 
                     </div>
                     </li>
 
                     <li class="dropdown"><a href="#contact_part3">ยุทธศาสตร์การพัฒนาฯ</a>
                         <div class="dropdown-content">
-                        <a href="#">ยุทธศาสตร์การพัฒนาฯ</a><br>
-                        <a href="#">การจัดซื้อจัดจ้างหรือจัดหาพัสดุ</a><br>
-                        <a href="#">สรุปการจัดซื้อจัดจ้างหรือการจัดหาพัสดุรายเดือน</a><br>
-                        <a href="#">สรุปการจัดซื้อจัดจ้างหรือการจัดหาพัสดุประจำปี</a><br>
+                        <a href="devstratigy.html">ยุทธศาสตร์การพัฒนาฯ</a><br>
+                        <a href="purchaseparcel.html">การจัดซื้อจัดจ้างหรือจัดหาพัสดุ</a><br>
+                        <a href="annourceparcel.html">ประกาศต่างๆ เกี่ยวกับการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a><br>
+                        <a href="parcelsummount.html">สรุปการจัดซื้อจัดจ้างหรือการจัดหาพัสดุรายเดือน</a><br>
+                        <a href="parcelsumyear.html">รายงานผลการจัดซื้อจัดจ้างหรือการจัดหาพัสดุประจำปี</a><br>
 
                     </div>
                     </li>
                     <li class="dropdown"><a href="#contact_part4">รายงาน</a>
                          <div class="dropdown-content">
-                        <a href="#">รายงาน</a><br>
-                        <a href="#">การจัดเก็บและการจัดเก็บรายได้</a><br>
-                        <a href="#">สถิติรายได้ของเทศบาล</a><br>
-                        <a href="#">วารสาร/รายงานผลการปฏิบัติงานประจำปี</a><br>
-                        <a href="#">การประชุมสภาเทศบาล</a><br>
-                        <a href="#">งานทะเบียนราชฎร</a><br>
-                        <a href="#">งานทะเบียนพานิชย์</a><br>
-                        <a href="#">งานป้องกันและบรรเทาสาธารณภัย</a><br>
-                        <a href="#">งานบริการกองสาธารณสุขฯ</a><br>
-                        <a href="#">งานกองสวัสดิการสังคม</a><br>
-                        <a href="#">งานบริหารกองช่าง</a><br>
-                        <a href="#">งานบริหารการกองศึกษา</a><br>
-                        <a href="#">รายงานผลการดำเนินการป้องกันการทุจริต</a><br>
+                        <a href="report.html">รายงาน</a><br>
+                        <a href="keep.html">การจัดเก็บและการจัดเก็บรายได้</a><br>
+                        <a href="income.html">สถิติรายได้ของเทศบาล</a><br>
+                        <a href="reportmag.html">วารสาร/รายงานผลการปฏิบัติงานประจำปี</a><br>
+                        <a href="meeting.html">การประชุมสภาเทศบาล</a><br>
+                        <a href="regisman.html">งานทะเบียนราชฎร</a><br>
+                        <a href="regiscom.html">งานทะเบียนพานิชย์</a><br>
+                        <a href="ems.html">งานป้องกันและบรรเทาสาธารณภัย</a><br>
+                        <a href="servicesanitary.html">งานบริการกองสาธารณสุขฯ</a><br>
+                        <a href="organunit.html">งานกองสวัสดิการสังคม</a><br>
+                        <a href="machanicunit.html">งานบริหารกองช่าง</a><br>
+                        <a href="manageunit.html">งานบริหารการกองศึกษา</a><br>
+                        <a href="reportcorruption.html">รายงานผลการดำเนินการป้องกันการทุจริต</a><br>
 
                     </div>
                     </li>
@@ -304,18 +309,19 @@ body {background-color: #e6f2ff;}
                     <li class="dropdown"><a href="#contact_part5">ศูนย์ข้อมูลข่าวสาร</a>
                         <div class="dropdown-content">
                         <a href="#">ศูนย์ข้อมูลข่าวสาร</a><br>
-                        <a href="#">ระเบียบ พรบ. กฏหมายที่เกี่ยวข้อง</a><br>
-                        <a href="#">มาตรฐานการปฏิบัติงาน</a><br><br>
-                        <a href="#">ศูนย์ข้อมูลข่าวสาร</a><br>
-                        <a href="#">ปรกาศเทศบาลฯ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="#">คำสั่งเทศบาลฯ</a><br>
-                        <a href="#">ศูนย์ประสานงานการเลือกตั้ง</a><br>
-                        <a href="#">คลังข้อมมูล</a><br>
-                        <a href="#">งานบริการกองสาธารณสุขฯ</a><br>
-                        <a href="#">งานกองสวัสดิการสังคม</a><br>
-                        <a href="#">งานบริหารกองช่าง</a><br>
-                        <a href="#">งานบริหารการกองศึกษา</a><br>
-                        <a href="#">รายงานผลการดำเนินการป้องกันการทุจริต</a><br>
+                        <a href="lawabout.html">ระเบียบ พรบ. กฏหมายที่เกี่ยวข้อง</a><br>
+                        <a href="standard.html">มาตรฐานการปฏิบัติงาน</a><br><br>
+                        <a href="data.html">ศูนย์ข้อมูลข่าวสาร</a><br>
+                        <a href="announe.html">ปรกาศเทศบาลฯ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="command.html">คำสั่งเทศบาลฯ</a><br>
+                        <a href="election.html">ศูนย์ประสานงานการเลือกตั้ง</a><br>
+                        <a href="archives.html">คลังข้อมมูล</a><br>
+                        <a href="km.html">มุม KM</a><br>
+                        <a href="complaint.html">ร้องเรียนงานบุคคล</a><br>
+                        <a href="servicestandard.html">มาตรฐานการให้บริการ</a><br>
+                        <a href="servicestat.html">ข้อมูลเชิงสถิติการให้บริการ</a><br>
+                        <a href="landtax.html">ภาษีโรงเรือนและที่ดิน</a><br>
+                        <a href="prspend.html">ประชาสัมพันธ์งบประมาณรายจ่าย</a><br>
 
                     </div>
                     </li>
@@ -327,7 +333,7 @@ body {background-color: #e6f2ff;}
 
                   
 
-                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;เข้าสู่ระบบ</a></li>
+                    <li><a href="logout.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;ออกจากระบบ</a></li>
                     </ul>
                     </div>
     </div>
@@ -341,52 +347,34 @@ body {background-color: #e6f2ff;}
 
         <div class="wrapper">
         
-        <div class="service_section">
+        
+        <div class="common_section" id="contact_part">
         <div class="container">
         
-                    <h2>สัญลักษณ์เทศบาลตำบลหางดง</h2>
-                    <h4>Hangdong Subdistrict Municipality's symbol </h4>
+                    <h2>สร้างข่าวประชาสัมพันธ์</h2>
+                    <h4>Creat News</h4>
                     
                    
-        
-        </div>
-        </div>
-        <div class="feature_section ano_feature_section">
-        <div class="container">
-        
+                    <br clear="all" />
+                    
+                    
+                    <form method="post" class="hpform" action="save-news.php" enctype="multipart/form-data">
+                        <input type="text" name="txtName" placeholder="หัวข้อข่าว" />
+                        <input type="text" name="txtLink" placeholder="ลิ๊งค์เว็ปไซด์" />
                         
-                        <div class="leftside">
-                        <h2>คำอธิบายภาพ</h2>
-                        <p>
-                        ขนาด เป็นตรารูปวงกลม  ขนาดเส้นผ่านศูนย์กลาง  ๕  เซนติเมตร
-                        </p>
-                        <p>
-                        รูปลักษณะ           ภาพช้าง
-                        </p>
-                         <p>
-                        ขอบบน   มีอักษร  “เทศบาลตำบลหางดง”
-                        </p>
-                        <p>
-                        ขอบล่าง  มีอักษร  “จังหวัดเชียงใหม่”
-                        </p>
-                        <p>
-                        ตรงกลางขอบ  มีรูปช้าง อยู่ในผืนป่าที่อุดมสมบูรณ์ ซึ่งเป็นสัญลักษณ์ที่โดดเด่นของตำบล      หางดง ซึ่งเป็นพื้นที่ที่อุดมไปด้วยทรัพยากรธรรมชาติที่อุดมสมบูรณ์
-                        </p>
-                        
-                        
-                        </div>
-                        
-                        
-                        <div class="rightside">
-                        <img src="images/logo.gif" alt="" class="wow bounceInRight animated imagethumb2" data-wow-offset="300" data-wow-delay="0.2s" style="height: 500px;width: 500px" />
-                        </div>          
+                        <textarea placeholder="รายละเอียดข่าว" name="txtMsg"></textarea>
+                        ไฟล์รูปภาพ &nbsp;&nbsp;&nbsp;<input type="file" name="fileToUpload" /><br><br>
+                        ไฟล์เอกสาร &nbsp;&nbsp;&nbsp;<input type="file" name="filUpload" /><br><br>
+                        <input type="submit" value="สร้างข่าว" />
+                    </form>
+                    
+                   
+                    
         
         </div>
         </div>
         
-        
-        
-        
+   
         
        
         
