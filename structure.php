@@ -12,25 +12,13 @@
         <div class="service_section">
         <div class="container">
         
-                    <h2>ประวัติความเป็นมา</h2>
-                    
-                   
-        
+                    <h2>เจตจำนงสุจริตของผู้บริหาร</h2>
+                    <center>
+                        <img src="images/structure.jpg" alt="" style="height: 700px;width: 700px"/>
+                        
+                    </center>
         </div>
         </div>
-        <div class="feature_section ano_feature_section">
-        <div class="container">
-        
-                        
-                        
-                        <div class="rightside">
-                        <img src="images/logo.gif" alt="" class="wow bounceInRight animated imagethumb2" style="height: 300px;width: 300px" data-wow-offset="300" data-wow-delay="0.2s" />
-                        </div>    
-                        
-                        
-                              
-        
-        </div>
-        </div>
+</div>
         
 <?php require_once 'footer.php'; ?>

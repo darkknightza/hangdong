@@ -214,83 +214,83 @@ body {background-color: #e6f2ff;}
                         <a href="sign.php">ตราสัญลักษณ์</a><br>
                         <a href="history.php">ประวัติความเป็นมา</a><br>
                         <a href="general.php">ข้อมูลทั่วไป</a><br>
-                        <a href="structure.html">โครงสร้างหน่วยงาน</a><br>
+                        <a href="structure.php">โครงสร้างหน่วยงาน</a><br>
                         <a href="power.php">อำนาจและหน้าที่ของเทศบาล</a><br>
                     </div></li>
 
                     <li class="dropdown"><a href="#features">คณะผู้บริหาร</a>
                     <div class="dropdown-content">
-                        <a href="manager.html">คณะผู้บริหาร</a><br>
-                        <a href="want.html">เจตจำนงสุจริตของผู้บริหาร</a><br>
-                        <a href="manteam.html">สมาชิกสภาเทศบาล</a><br>
-                        <a href="handgor.html">หัวหน้าส่วนราชการ</a><br>
+                        <a href="manager.php">คณะผู้บริหาร</a><br>
+                        <a href="want.php">เจตจำนงสุจริตของผู้บริหาร</a><br>
+                        <a href="manteam.php">สมาชิกสภาเทศบาล</a><br>
+                        <a href="handgor.php">หัวหน้าส่วนราชการ</a><br>
                     </div></li>
 
                     <li class="dropdown"><a href="#testimonials_part">หน่วยงาน </a>
                         <div class="dropdown-content">
-                        <a href="unit.html">หน่วยงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="palad.html">สำนักปลัดเทศบาล&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="money.html">กองคลัง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br><br>
-                        <a href="machunic.html">กองช่าง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="education.html">กองการศึกษา</a><br>
-                        <a href="sanitary.html">กองสาธารณสุขและสิ่งแวดล้อม</a><br>
-                        <a href="organ.html">กองสวัสดิการสังคม&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="jamnam.html">สถานธนานุบาล</a><br>
-                        <a href="school.html">โรงเรียนเทศบาลหางดง (ประชาคมสร้างสรรค์)</a><br>
-                        <a href="nursary.html">ศูนย์พัฒนาเด็กเล็ก</a><br>
-                        <a href="it.html">ศูนย์บริการสารสนเทศ</a>
+                        <a href="unit.php">หน่วยงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="palad.php">สำนักปลัดเทศบาล&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="money.php">กองคลัง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br><br>
+                        <a href="machunic.php">กองช่าง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="education.php">กองการศึกษา</a><br>
+                        <a href="sanitary.php">กองสาธารณสุขและสิ่งแวดล้อม</a><br>
+                        <a href="organ.php">กองสวัสดิการสังคม&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="jamnam.php">สถานธนานุบาล</a><br>
+                        <a href="school.php">โรงเรียนเทศบาลหางดง (ประชาคมสร้างสรรค์)</a><br>
+                        <a href="nursary.php">ศูนย์พัฒนาเด็กเล็ก</a><br>
+                        <a href="it.php">ศูนย์บริการสารสนเทศ</a>
                     </div></li>
                     <li class="dropdown"><a href="#contact_part1">นโยบาย</a>
                         <div class="dropdown-content">
-                        <a href="policy.html">นโยบาย&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="policydata.html">นโยบายและแผน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="ordinance.html">เทศบัญญัติฯ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="mumplan.html">แผนพัฒนาเทศบาล&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="processplan.html">แผนการดำเนินงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="tracEvaReport.html">รายงานติดตามและประเมินผลฯ</a><br>
-                        <a href="internalReport.html">รายงานการประเมินผลการควบคุมภายใน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="purchase.html">แผนการจัดซื้อจัดจ้าง</a><br>
-                        <a href="corruptplan.htm">แผนปฏิบัติการป้องกันการทุจริต ๒๕๖๐ - ๒๕๖๔</a><br>
-                        <a href="complaintguide.html">แนวปฏิบัติการจัดการเรื่องร้องเรียนการทุจริต</a><br>
-                        <a href="process6mount.html">รายงานการกำกับติดตามการดำเนินงานรอบ ๖ เดือน</a><br>
-                        <a href="processyear.html">รายงานผลการดำเนินงานประจำปี</a><br>
-                        <a href="tracReportmoney6.html">รายงานการกำกับติดตามการใช้จ่ายงบประมาณ รอบ ๖ เดือน</a><br>
-                        <a href="reportmoneyyear.html">รายงานผลการใช้จ่ายงบประมาณประจำปี</a><br>
-                        <a href="corrupt6mount.html">รายงานการกำกับติดตามการดำเนินงานการป้องกันการทุจริต รอบ ๖ เดือน</a><br>
+                        <a href="policy.php">นโยบาย&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="policydata.php">นโยบายและแผน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="ordinance.php">เทศบัญญัติฯ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="mumplan.php">แผนพัฒนาเทศบาล&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="processplan.php">แผนการดำเนินงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="tracEvaReport.php">รายงานติดตามและประเมินผลฯ</a><br>
+                        <a href="internalReport.php">รายงานการประเมินผลการควบคุมภายใน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="purchase.php">แผนการจัดซื้อจัดจ้าง</a><br>
+                        <a href="corruptplan.php">แผนปฏิบัติการป้องกันการทุจริต ๒๕๖๐ - ๒๕๖๔</a><br>
+                        <a href="complaintguide.php">แนวปฏิบัติการจัดการเรื่องร้องเรียนการทุจริต</a><br>
+                        <a href="process6mount.php">รายงานการกำกับติดตามการดำเนินงานรอบ ๖ เดือน</a><br>
+                        <a href="processyear.php">รายงานผลการดำเนินงานประจำปี</a><br>
+                        <a href="tracReportmoney6.php">รายงานการกำกับติดตามการใช้จ่ายงบประมาณ รอบ ๖ เดือน</a><br>
+                        <a href="reportmoneyyear.php">รายงานผลการใช้จ่ายงบประมาณประจำปี</a><br>
+                        <a href="corrupt6mount.php">รายงานการกำกับติดตามการดำเนินงานการป้องกันการทุจริต รอบ ๖ เดือน</a><br>
                     </div></li>
                     <li class="dropdown"><a href="#pricing_part2">แผนอัตรากำลัง ๓ ปี</a>
                      <div class="dropdown-content">
                         <a href="#">แผนอัตรากำลัง ๓ ปี</a><br>
-                        <a href="powerplan3y.html">๒๕๖๑ - ๓๕๖๓</a><br>
+                        <a href="powerplan3y.php">๒๕๖๑ - ๓๕๖๓</a><br>
 
                     </div>
                     </li>
 
                     <li class="dropdown"><a href="#contact_part3">ยุทธศาสตร์การพัฒนาฯ</a>
                         <div class="dropdown-content">
-                        <a href="devstratigy.html">ยุทธศาสตร์การพัฒนาฯ</a><br>
-                        <a href="purchaseparcel.html">การจัดซื้อจัดจ้างหรือจัดหาพัสดุ</a><br>
-                        <a href="annourceparcel.html">ประกาศต่างๆ เกี่ยวกับการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a><br>
-                        <a href="parcelsummount.html">สรุปการจัดซื้อจัดจ้างหรือการจัดหาพัสดุรายเดือน</a><br>
-                        <a href="parcelsumyear.html">รายงานผลการจัดซื้อจัดจ้างหรือการจัดหาพัสดุประจำปี</a><br>
+                        <a href="devstratigy.php">ยุทธศาสตร์การพัฒนาฯ</a><br>
+                        <a href="purchaseparcel.php">การจัดซื้อจัดจ้างหรือจัดหาพัสดุ</a><br>
+                        <a href="annourceparcel.php">ประกาศต่างๆ เกี่ยวกับการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a><br>
+                        <a href="parcelsummount.php">สรุปการจัดซื้อจัดจ้างหรือการจัดหาพัสดุรายเดือน</a><br>
+                        <a href="parcelsumyear.php">รายงานผลการจัดซื้อจัดจ้างหรือการจัดหาพัสดุประจำปี</a><br>
 
                     </div>
                     </li>
                     <li class="dropdown"><a href="#contact_part4">รายงาน</a>
                          <div class="dropdown-content">
-                        <a href="report.html">รายงาน</a><br>
-                        <a href="keep.html">การจัดเก็บและการจัดเก็บรายได้</a><br>
-                        <a href="income.html">สถิติรายได้ของเทศบาล</a><br>
-                        <a href="reportmag.html">วารสาร/รายงานผลการปฏิบัติงานประจำปี</a><br>
-                        <a href="meeting.html">การประชุมสภาเทศบาล</a><br>
-                        <a href="regisman.html">งานทะเบียนราชฎร</a><br>
-                        <a href="regiscom.html">งานทะเบียนพานิชย์</a><br>
-                        <a href="ems.html">งานป้องกันและบรรเทาสาธารณภัย</a><br>
-                        <a href="servicesanitary.html">งานบริการกองสาธารณสุขฯ</a><br>
-                        <a href="organunit.html">งานกองสวัสดิการสังคม</a><br>
-                        <a href="machanicunit.html">งานบริหารกองช่าง</a><br>
-                        <a href="manageunit.html">งานบริหารการกองศึกษา</a><br>
-                        <a href="reportcorruption.html">รายงานผลการดำเนินการป้องกันการทุจริต</a><br>
+                        <a href="report.php">รายงาน</a><br>
+                        <a href="keep.php">การจัดเก็บและการจัดเก็บรายได้</a><br>
+                        <a href="income.php">สถิติรายได้ของเทศบาล</a><br>
+                        <a href="reportmag.php">วารสาร/รายงานผลการปฏิบัติงานประจำปี</a><br>
+                        <a href="meeting.php">การประชุมสภาเทศบาล</a><br>
+                        <a href="regisman.php">งานทะเบียนราชฎร</a><br>
+                        <a href="regiscom.php">งานทะเบียนพานิชย์</a><br>
+                        <a href="ems.php">งานป้องกันและบรรเทาสาธารณภัย</a><br>
+                        <a href="servicesanitary.php">งานบริการกองสาธารณสุขฯ</a><br>
+                        <a href="organunit.php">งานกองสวัสดิการสังคม</a><br>
+                        <a href="machanicunit.php">งานบริหารกองช่าง</a><br>
+                        <a href="manageunit.php">งานบริหารการกองศึกษา</a><br>
+                        <a href="reportcorruption.php">รายงานผลการดำเนินการป้องกันการทุจริต</a><br>
 
                     </div>
                     </li>
@@ -298,26 +298,26 @@ body {background-color: #e6f2ff;}
                     <li class="dropdown"><a href="#contact_part5">ศูนย์ข้อมูลข่าวสาร</a>
                         <div class="dropdown-content">
                         <a href="#">ศูนย์ข้อมูลข่าวสาร</a><br>
-                        <a href="lawabout.html">ระเบียบ พรบ. กฏหมายที่เกี่ยวข้อง</a><br>
-                        <a href="standard.html">มาตรฐานการปฏิบัติงาน</a><br><br>
-                        <a href="data.html">ศูนย์ข้อมูลข่าวสาร</a><br>
-                        <a href="announe.html">ปรกาศเทศบาลฯ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
-                        <a href="command.html">คำสั่งเทศบาลฯ</a><br>
-                        <a href="election.html">ศูนย์ประสานงานการเลือกตั้ง</a><br>
-                        <a href="archives.html">คลังข้อมมูล</a><br>
-                        <a href="km.html">มุม KM</a><br>
-                        <a href="complaint.html">ร้องเรียนงานบุคคล</a><br>
-                        <a href="servicestandard.html">มาตรฐานการให้บริการ</a><br>
-                        <a href="servicestat.html">ข้อมูลเชิงสถิติการให้บริการ</a><br>
-                        <a href="landtax.html">ภาษีโรงเรือนและที่ดิน</a><br>
-                        <a href="prspend.html">ประชาสัมพันธ์งบประมาณรายจ่าย</a><br>
+                        <a href="lawabout.php">ระเบียบ พรบ. กฏหมายที่เกี่ยวข้อง</a><br>
+                        <a href="standard.php">มาตรฐานการปฏิบัติงาน</a><br><br>
+                        <a href="data.php">ศูนย์ข้อมูลข่าวสาร</a><br>
+                        <a href="announe.php">ปรกาศเทศบาลฯ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+                        <a href="command.php">คำสั่งเทศบาลฯ</a><br>
+                        <a href="election.php">ศูนย์ประสานงานการเลือกตั้ง</a><br>
+                        <a href="archives.php">คลังข้อมมูล</a><br>
+                        <a href="km.php">มุม KM</a><br>
+                        <a href="complaint.php">ร้องเรียนงานบุคคล</a><br>
+                        <a href="servicestandard.php">มาตรฐานการให้บริการ</a><br>
+                        <a href="servicestat.php">ข้อมูลเชิงสถิติการให้บริการ</a><br>
+                        <a href="landtax.php">ภาษีโรงเรือนและที่ดิน</a><br>
+                        <a href="prspend.php">ประชาสัมพันธ์งบประมาณรายจ่าย</a><br>
 
                     </div>
                     </li>
 
                   
 
-                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;เข้าสู่ระบบ</a></li>
+                    <li><a href="login.php"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;เข้าสู่ระบบ</a></li>
                     </ul>
                     </div>
         
