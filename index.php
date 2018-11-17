@@ -212,7 +212,7 @@ body {background-color: #e6f2ff;}
 
 <body>
     <div class="hed1">
-    <a href="#" class="logo"><img src="images/logo.gif" alt="" style="height: 100px;width: 100px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>&nbsp;&nbsp;&nbsp;เทศบาลตำบลหางดง</h1>
+    <a href="index.php" class="logo"><img src="images/logo.gif" alt="" style="height: 100px;width: 100px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>&nbsp;&nbsp;&nbsp;เทศบาลตำบลหางดง</h1>
                     <br>&nbsp;&nbsp;&nbsp;Hangdong Subdistrict Municipality
                     <br>
                     <br>
