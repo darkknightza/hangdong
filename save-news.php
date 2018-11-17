@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "connect.php";
-$target_dir = "img/";
+$target_dir = "images/";
 if($_FILES["fileToUpload"]["name"]){
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 
