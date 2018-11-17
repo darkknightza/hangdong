@@ -54,16 +54,28 @@ if($_FILES["fileToUpload"]["name"]){
         }
     }
 }else{
-    $PictureName = filter_input(INPUT_POST, 'picture', FILTER_SANITIZE_STRING);
+    $PictureName = filter_input(INPUT_POST, 'NEWSPICTURE', FILTER_SANITIZE_STRING);
 }
-
+$Filename = filter_input(INPUT_POST, 'filUpload', FILTER_DEFAULT);
+if($Filename)
+{
+    echo 1;
+    copy($_FILES["filUpload"]["tmp_name"],"myfile/".$_FILES["filUpload"]["name"]);
+   // $Filename = $_FILES["filUpload"]["name"];
+}else{
+    $Filename = filter_input(INPUT_POST, 'NEWSFILE', FILTER_SANITIZE_STRING);
+    echo 2;
+}
 
 $txtName = filter_input(INPUT_POST, 'txtName', FILTER_SANITIZE_STRING);
 $txtMsg = filter_input(INPUT_POST, 'txtMsg', FILTER_SANITIZE_STRING);
-$ID = filter_input(INPUT_POST, 'ID', FILTER_SANITIZE_STRING);
-$sql = "UPDATE `news_information` SET `NEWS_ID`= $ID,`NEWS_NAME`= '$txtName',`NEWS_DETAILS`= '$txtMsg',`SUBMIT_DATE`= NOW(),`NEWS_PICTURE`= '$PictureName'";
+$txtLink = filter_input(INPUT_POST, 'txtLink', FILTER_SANITIZE_STRING);
+$ID = filter_input(INPUT_POST, 'NewsId', FILTER_SANITIZE_STRING);
+$sql = "UPDATE `news_information` SET `NEWS_NAME`= '$txtName',`NEWS_DETAILS`= '$txtMsg',`SUBMIT_DATE`= NOW(),`NEWS_PICTURE`= '$PictureName',`NEWS_LINK` = '$txtLink',`NEWS_FILE` = '$Filename' WHERE `NEWS_ID`= $ID";
 $objQuery = mysqli_query($objCon,$sql);
 if($objQuery){
     echo '<script>alert("Insert complete");window.location = "index.php"</script>';
+}else{
+  
 }
 ?>

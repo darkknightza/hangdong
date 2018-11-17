@@ -65,6 +65,7 @@ $txtLink = filter_input(INPUT_POST, 'txtLink', FILTER_SANITIZE_STRING);
 $txtMsg = filter_input(INPUT_POST, 'txtMsg', FILTER_SANITIZE_STRING);
 $sql = "INSERT INTO `news_information`(`NEWS_NAME`, `NEWS_DETAILS`, `NEWS_PICTURE`,`NEWS_LINK`,`NEWS_FILE`) VALUES ('$txtName','$txtMsg','$PictureName','$txtLink','".$_FILES["filUpload"]["name"]."')";
 $objQuery = mysqli_query($objCon,$sql);
+
 }
 if($objQuery){
     if($_SESSION["USERNAME"]!=''){

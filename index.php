@@ -248,7 +248,7 @@ body {background-color: #e6f2ff;}
                             
                                 
                                 <div class="ls-l" style="top:265px;left:598px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-                                <a href="detail.html" class="button2">ดูรายละเอียด</a>
+                                <a href="detail.php?NEWS_ID=<?php echo $row1['NEWS_ID']; ?>" class="button2">ดูรายละเอียด</a>
                                 </div>
 
 
@@ -292,7 +292,7 @@ body {background-color: #e6f2ff;}
     
    
         <div class="header" >
-        			<a href="#" class="logo"><img src="images/logo.gif" alt="" style="height: 100px;width: 100px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>&nbsp;&nbsp;&nbsp;เทศบาลตำบลหางดง</h1>
+        			<a href="index.php" class="logo"><img src="images/logo.gif" alt="" style="height: 100px;width: 100px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>&nbsp;&nbsp;&nbsp;เทศบาลตำบลหางดง</h1>
                     <br>&nbsp;&nbsp;&nbsp;Hangdong Subdistrict Municipality
                     
                     <div class="nav mobile">
@@ -408,7 +408,7 @@ body {background-color: #e6f2ff;}
                     <li class="dropdown"><a href="login.html">ข่าว</a>
                         <div class="dropdown-content">
                         <a href="creatnews.html">สร้างข่าว</a><br>
-                        <a href="#">ดูข้อมูลข่าว</a><br>
+                        <a href="NewsList.php">ดูข้อมูลข่าว</a><br>
                     </li>
 
                   

@@ -346,7 +346,7 @@ body {background-color: #e6f2ff;}
         
         				
                         <div class="leftside">
-                            <img src="images/<?php echo $row["NEWS_PICTURE"];?>" alt=""  class="wow bounceInLeft animated" data-wow-duration="2s" data-wow-offset="300" data-wow-delay="0.2s" />
+                            <img src="images/<?php echo $row["NEWS_PICTURE"];?>" alt=""  width="100%" height="100%" class="wow bounceInLeft animated" data-wow-duration="2s" data-wow-offset="300" data-wow-delay="0.2s" />
                         </div>
                         
                         
@@ -368,11 +368,8 @@ body {background-color: #e6f2ff;}
                             <br>
                             <a href="myfile/<?=$row["NEWS_FILE"];?>"><?=$row["NEWS_FILE"];?>
                         </p>
-                        
-                        
-                        
-                        
-                        </div>			
+                        </div>
+                        <div class="fb-comments" data-href="http://www.hangdong.go.th/detail.php?NEWS_ID=<?php echo $value; ?>" data-numposts="5"></div>	
         
         </div>
         </div>
@@ -502,7 +499,14 @@ body {background-color: #e6f2ff;}
         
         
         </script> 
-             
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.2';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
 		
 </body>
