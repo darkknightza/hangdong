@@ -10,6 +10,9 @@
 
     $sql = "SELECT * FROM `news_information`";
     $query=mysqli_query($objCon,$sql);
+
+    $sql1 = "SELECT * FROM `news_information` ORDER BY NEWS_ID DESC LIMIT 2";
+    $query1=mysqli_query($objCon,$sql1);
     
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -1,7 +1,11 @@
 <?php 
     include "connect.php";
-    $sql = "SELECT * FROM `news_information`";
+    $sql = "SELECT * FROM `news_information` ORDER BY NEWS_ID DESC";
     $query=mysqli_query($objCon,$sql);
+
+    $sql1 = "SELECT * FROM `news_information` ORDER BY NEWS_ID DESC LIMIT 2";
+    $query1=mysqli_query($objCon,$sql1);
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -220,23 +224,25 @@ body {background-color: #e6f2ff;}
         <div id="full-slider-wrapper">
         <div id="layerslider" style="width:100%;height:473px;">
         
-        
+                            <?php $j=1;
+                                while ($row1 = mysqli_fetch_array($query1, MYSQLI_ASSOC)) { 
+                            ?>
                                 <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
                                 <img src="images/slider/t1.jpg" class="ls-bg" alt="Slide background"/>
                                 
                                 
                                 <div class="ls-l videopreview" style="top:87px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
                                 <!--<iframe src="http://player.vimeo.com/video/34134308?portrait=0&amp;color=ff9933&autoplay=1" width="443" height="290" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-                                <img src="images/y1.jpg" alt=""  style="height: 300px;width: 450px"/>
+                                <img src="images/<?php echo $row1["NEWS_PICTURE"]; ?>" alt=""  style="height: 300px;width: 450px"/>
                                 </div>
                                 
                                 
                                 <div class="ls-l" style="top:140px;left:638px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-                                <h2 class="l1">ข่าวที่ 1</h2>
+                                <h2 class="l1"><?php echo $row1["NEWS_NAME"]; ?></h2>
                                 </div>
                                 
                                 <div class="ls-l" style="top:200px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-                                <h2 class="l2">เปิดตลาดเทศบาลแห่งใหม่</h2>
+                                <h2 class="l2"><?php echo $row1["NEWS_DETAILS"]; ?></h2>
                                 </div>
                                 
                             
@@ -252,37 +258,10 @@ body {background-color: #e6f2ff;}
                                 
                                
                                 </div><!--FIRST SLIDE-->
-                                <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
-                                <img src="images/slider/t2.jpg" class="ls-bg" alt="Slide background"/>
-                                
-                                
-                                <div class="ls-l videopreview" style="top:87px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
-                                <!--<iframe src="http://player.vimeo.com/video/34134308?portrait=0&amp;color=ff9933&autoplay=1" width="443" height="290" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-                                <img src="images/y2.jpg" alt=""  style="height: 300px;width: 450px"/>
-                                </div>
-                                
-                                
-                                <div class="ls-l" style="top:140px;left:638px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-                                <h2 class="l1">ข่าวที่ 2</h2>
-                                </div>
-                                
-                                <div class="ls-l" style="top:200px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-                                <h2 class="l2">เปิดอาคารเรียนหลังใหม่</h2>
-                                </div>
-                                
-                            
-                                
-                                <div class="ls-l" style="top:265px;left:598px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-                                <a href="detail.html" class="button2">ดูรายละเอียด</a>
-                                </div>
+                            <?php $j++; } ?>                  
 
                                 
                                 
-                                
-                                
-                                
-                               
-                                </div><!--FIRST SLIDE-->
                                 
                                 
                                 
@@ -333,7 +312,7 @@ body {background-color: #e6f2ff;}
                     <li class="dropdown"><a href="#features">คณะผู้บริหาร</a>
                     <div class="dropdown-content">
                         <a href="manager.html">คณะผู้บริหาร</a><br>
-                        <a href="want.html">เจตจำนงสุจริตของผู้บริหาร</a><br>\
+                        <a href="want.html">เจตจำนงสุจริตของผู้บริหาร</a><br>
                         <a href="manteam.html">สมาชิกสภาเทศบาล</a><br>
                         <a href="handgor.html">หัวหน้าส่วนราชการ</a><br>
                     </div></li>
@@ -430,7 +409,6 @@ body {background-color: #e6f2ff;}
                         <div class="dropdown-content">
                         <a href="creatnews.html">สร้างข่าว</a><br>
                         <a href="#">ดูข้อมูลข่าว</a><br>
-                        <a href="file/เอกสาร.pdf">ฟไกฟไกฟไก</a><br>
                     </li>
 
                   
@@ -466,7 +444,7 @@ body {background-color: #e6f2ff;}
                         <div class="title"><?php echo $row["NEWS_NAME"]; ?></div>
                         <img src="images/<?php echo $row["NEWS_PICTURE"];?>" alt="..." class="img-thumbnail" style="height: 250px;width: 500px">
                         <p>
-                        .....
+                        <?php echo $row["SUBMIT_DATE"];?>
 
                         </p>
 
