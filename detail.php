@@ -358,6 +358,16 @@ body {background-color: #e6f2ff;}
                             <br>
                             <?php echo $row["NEWS_DETAILS"]; ?>
                         </p>
+                        <p>
+                            <h3>ลิ๊งค์เว็ปไซด์</h3>
+                            <br>
+                            <?php echo $row["NEWS_LINK"]; ?>
+                        </p>
+                        <p>
+                            <h3>เนื้อหาที่ดาวโหลดได้</h3>
+                            <br>
+                            <a href="myfile/<?=$row["NEWS_FILE"];?>"><?=$row["NEWS_FILE"];?>
+                        </p>
                         
                         
                         

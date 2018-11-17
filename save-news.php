@@ -57,12 +57,15 @@ if($_FILES["fileToUpload"]["name"]){
 }else{
     $PictureName = "profile.png";
 }
-
+if(copy($_FILES["filUpload"]["tmp_name"],"myfile/".$_FILES["filUpload"]["name"]))
+{
 
 $txtName = filter_input(INPUT_POST, 'txtName', FILTER_SANITIZE_STRING);
+$txtLink = filter_input(INPUT_POST, 'txtLink', FILTER_SANITIZE_STRING);
 $txtMsg = filter_input(INPUT_POST, 'txtMsg', FILTER_SANITIZE_STRING);
-$sql = "INSERT INTO `news_information`(`NEWS_NAME`, `NEWS_DETAILS`, `NEWS_PICTURE`) VALUES ('$txtName','$txtMsg','$PictureName')";
+$sql = "INSERT INTO `news_information`(`NEWS_NAME`, `NEWS_DETAILS`, `NEWS_PICTURE`,`NEWS_LINK`,`NEWS_FILE`) VALUES ('$txtName','$txtMsg','$PictureName','$txtLink','".$_FILES["filUpload"]["name"]."')";
 $objQuery = mysqli_query($objCon,$sql);
+}
 if($objQuery){
     if($_SESSION["USERNAME"]!=''){
         echo '<script>alert("Insert complete");window.location = "indexad.php"</script>';

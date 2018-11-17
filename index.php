@@ -430,6 +430,7 @@ body {background-color: #e6f2ff;}
                         <div class="dropdown-content">
                         <a href="creatnews.html">สร้างข่าว</a><br>
                         <a href="#">ดูข้อมูลข่าว</a><br>
+                        <a href="file/เอกสาร.pdf">ฟไกฟไกฟไก</a><br>
                     </li>
 
                   
@@ -458,68 +459,19 @@ body {background-color: #e6f2ff;}
                     <h4>News From Hangdong Subdistrict Municipality Office</h4>
                     
                     
-                    <a href="detail.html"><div class="faqbox">
-                    <div class="title">Are bears just about to extinct?</div>
-                    <img src="images/y2.jpg" alt="..." class="img-thumbnail" style="height: 250px;width: 500px">
-                    <p>
-                    Yes! But if you’d like to buy us a slice of cheap pizza, we’ll reward you with some cool bonus features.
+                    <?php $i=1;
+                                while ($row = mysqli_fetch_array($query, MYSQLI_ASSOC)) { 
+                            ?>
+                        <a href="detail.php?NEWS_ID=<?php echo $row['NEWS_ID']; ?>"><div class="faqbox">
+                        <div class="title"><?php echo $row["NEWS_NAME"]; ?></div>
+                        <img src="images/<?php echo $row["NEWS_PICTURE"];?>" alt="..." class="img-thumbnail" style="height: 250px;width: 500px">
+                        <p>
+                        .....
 
-                    </p>
+                        </p>
 
-                    </div></a>
-                    
-                    <a href="detail.html"><div class="faqbox">
-                    <div class="title">Are bears just about to extinct?</div>
-                    <img src="images/y2.jpg" alt="..." class="img-thumbnail" style="height: 250px;width: 500px">
-                    <p>
-                    Yes! But if you’d like to buy us a slice of cheap pizza, we’ll reward you with some cool bonus features.
-
-                    </p>
-
-                    </div></a>
-
-                    <a href="detail.html"><div class="faqbox">
-                    <div class="title">Are bears just about to extinct?</div>
-                    <img src="images/y2.jpg" alt="..." class="img-thumbnail" style="height: 250px;width: 500px">
-                    <p>
-                    Yes! But if you’d like to buy us a slice of cheap pizza, we’ll reward you with some cool bonus features.
-
-                    </p>
-
-                    </div></a>
-                    
-                    
-                    <a href="detail.html"><div class="faqbox">
-                    <div class="title">Are bears just about to extinct?</div>
-                    <img src="images/y2.jpg" alt="..." class="img-thumbnail" style="height: 250px;width: 500px">
-                    <p>
-                    Yes! But if you’d like to buy us a slice of cheap pizza, we’ll reward you with some cool bonus features.
-
-                    </p>
-
-                    </div></a>
-                    
-                    
-                    <a href="detail.html"><div class="faqbox">
-                    <div class="title">Are bears just about to extinct?</div>
-                    <img src="images/y2.jpg" alt="..." class="img-thumbnail" style="height: 250px;width: 500px">
-                    <p>
-                    Yes! But if you’d like to buy us a slice of cheap pizza, we’ll reward you with some cool bonus features.
-
-                    </p>
-
-                    </div></a>
-                    
-                    
-                    <a href="detail.html"><div class="faqbox">
-                    <div class="title">Are bears just about to extinct?</div>
-                    <img src="images/y2.jpg" alt="..." class="img-thumbnail" style="height: 250px;width: 500px">
-                    <p>
-                    Yes! But if you’d like to buy us a slice of cheap pizza, we’ll reward you with some cool bonus features.
-
-                    </p>
-
-                    </div></a>
+                        </div></a>
+                    <?php $i++; } ?>
                     
                     
         
